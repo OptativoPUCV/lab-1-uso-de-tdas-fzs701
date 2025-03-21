@@ -72,3 +72,9 @@ exercises.c:61:8: error: variable 'suma' set but not used [-Werror=unused-but-se
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2fe5866
+Fri, Mar 21, 2025 10:30:22 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+0deaf16
