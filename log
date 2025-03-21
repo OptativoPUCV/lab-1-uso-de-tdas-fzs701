@@ -1008,3 +1008,9 @@ stack.h:11:6: note: expected 'void *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 1ffd97b
+Fri, Mar 21, 2025  4:17:59 PM: 
+ exercises.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+ tests:  9|0
+total_score: 70/70
+9916724
