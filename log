@@ -662,3 +662,17 @@ exercises.c:135:46: note: ...this statement, but the latter is misleadingly inde
 cc1.exe: all warnings being treated as errors
 Compilation failed
 6b61e44
+Fri, Mar 21, 2025 11:50:43 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:133:23: error: suggest parentheses around '&&' within '||' [-Werror=parentheses]
+          if(bl == ')' && *comprobar != '('  ||
+             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:135:23: error: suggest parentheses around '&&' within '||' [-Werror=parentheses]
+             bl == ']' && *comprobar != '[' ){
+             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5e35905
