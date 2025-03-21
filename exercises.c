@@ -126,7 +126,7 @@ int parentesisBalanceados(char *cadena) {
          if(top(P1) == NULL){
             return 0;
          }
-         char comprobar = (char)pop(pila)
+         char comprobar = (char*)pop(pila)
          if(bl == '(' && comprobar == ')' ){
             return 0;
          }

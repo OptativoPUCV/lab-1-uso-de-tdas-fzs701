@@ -515,3 +515,21 @@ exercises.c:129:15: error: unused variable 'comprobar' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 78524bc
+Fri, Mar 21, 2025 11:30:31 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:129:38: error: 'pila' undeclared (first use in this function)
+          char comprobar = (char*)pop(pila)
+                                      ^~~~
+exercises.c:129:38: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:130:10: error: expected ',' or ';' before 'if'
+          if(bl == '(' && comprobar == ')' ){
+          ^~
+exercises.c:129:15: error: unused variable 'comprobar' [-Werror=unused-variable]
+          char comprobar = (char*)pop(pila)
+               ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+69cdf5d
