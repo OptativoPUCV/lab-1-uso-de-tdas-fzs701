@@ -4,3 +4,20 @@ Fri, Mar 21, 2025 10:17:55 AM:
  tests:  0|5
 total_score: 0/70
 3f6cb15
+Fri, Mar 21, 2025 10:28:44 AM: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:64:14: error: dereferencing 'void *' pointer [-Werror]
+       suma = *num;
+              ^~~~
+exercises.c:64:12: error: void value not ignored as it ought to be
+       suma = *num;
+            ^
+exercises.c:61:8: error: variable 'suma' set but not used [-Werror=unused-but-set-variable]
+    int suma = 0;
+        ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a1e2550
