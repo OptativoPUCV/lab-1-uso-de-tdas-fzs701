@@ -127,7 +127,7 @@ int parentesisBalanceados(char *cadena) {
             return 0;
          }
          char* comprobar = (char*)pop(P1);
-         if(bl == '(' && comprobar != ')' ){
+         if(*comprobar != ')' ){
             return 0;
          }
       }
