@@ -615,3 +615,18 @@ Fri, Mar 21, 2025 11:38:54 AM:
  tests:  3|2
 total_score: 40/70
 2b19826
+Fri, Mar 21, 2025 11:41:08 AM: 
+ exercises.c | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:135:18: error: 'NULLn' undeclared (first use in this function)
+    if(top(P1) == NULLn){
+                  ^~~~~
+exercises.c:135:18: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:140:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7a7556a
