@@ -103,3 +103,22 @@ arraylist.h:32:7: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 af25acd
+Fri, Mar 21, 2025 10:38:41 AM: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'eliminaElementos':
+exercises.c:82:14: error: comparison between pointer and integer [-Werror]
+       if(num == elem){
+              ^~
+exercises.c:83:10: error: too many arguments to function 'popCurrent'
+          popCurrent(L,num);
+          ^~~~~~~~~~
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:32:7: note: declared here
+ void *popCurrent(List *L);
+       ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2b24be1
