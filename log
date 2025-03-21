@@ -682,3 +682,17 @@ Fri, Mar 21, 2025 11:51:17 AM:
  tests:  3|2
 total_score: 40/70
 5538b48
+Fri, Mar 21, 2025  3:45:18 PM: 
+ exercises.c | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:126:18: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+          push(P1,(void*)bl);
+                  ^
+exercises.c:132:27: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+          char comprobar = (char)pop(P1);
+                           ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+60d7c42
