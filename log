@@ -581,3 +581,14 @@ exercises.c:129:16: error: unused variable 'comprobar' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 eea6e07
+Fri, Mar 21, 2025 11:32:12 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:130:36: error: comparison between pointer and integer [-Werror]
+          if(bl == '(' && comprobar == ')' ){
+                                    ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6fba20e
