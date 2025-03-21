@@ -21,3 +21,15 @@ exercises.c:61:8: error: variable 'suma' set but not used [-Werror=unused-but-se
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a1e2550
+Fri, Mar 21, 2025 10:29:08 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:64:15: error: dereferencing 'void *' pointer [-Werror]
+       suma += *num;
+               ^~~~
+exercises.c:64:15: error: void value not ignored as it ought to be
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f4b7f23
