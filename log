@@ -198,3 +198,38 @@ stack.h:11:6: note: expected 'void *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 d6224bb
+Fri, Mar 21, 2025 10:59:43 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'copia_pila':
+exercises.c:99:16: error: implicit declaration of function 'create_Stack' [-Werror=implicit-function-declaration]
+    Stack* PA = create_Stack();
+                ^~~~~~~~~~~~
+exercises.c:99:16: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+exercises.c:101:18: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+       int elem = top(P1);
+                  ^~~
+exercises.c:102:15: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(PA,elem);
+               ^~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+In file included from test.c:5:0:
+exercises.c:105:18: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+       int elem = top(PA);
+                  ^~~
+exercises.c:106:15: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(P2,elem);
+               ^~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+15e9b81
