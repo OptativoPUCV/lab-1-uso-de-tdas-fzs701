@@ -129,7 +129,7 @@ int parentesisBalanceados(char *cadena) {
          if(top(P1) == NULL){
             return 0;
          }
-         pop(P1);
+         //pop(P1);
          char* comprobar = (char*)pop(P1);
          if((bl == ')' && comprobar != '(')  ||
             (bl == '}' && comprobar != '{' ) ||
