@@ -128,3 +128,38 @@ Fri, Mar 21, 2025 10:45:41 AM:
  tests:  2|3
 total_score: 30/70
 d3053ac
+Fri, Mar 21, 2025 10:57:42 AM: 
+ exercises.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'copia_pila':
+exercises.c:99:17: error: 'create_Stack' undeclared (first use in this function)
+    Stack* PA = *create_Stack;
+                 ^~~~~~~~~~~~
+exercises.c:99:17: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:101:18: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+       int elem = top(P1);
+                  ^~~
+exercises.c:102:15: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(PA,elem);
+               ^~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+In file included from test.c:5:0:
+exercises.c:105:18: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+       int elem = top(PA);
+                  ^~~
+exercises.c:106:15: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Werror=int-conversion]
+       push(P2,elem);
+               ^~~~
+In file included from exercises.c:7:0,
+                 from test.c:5:
+stack.h:11:6: note: expected 'void *' but argument is of type 'int'
+ void push(Stack *stack, void *data) { pushFront(stack, data); }
+      ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+cf4fd06
