@@ -826,3 +826,14 @@ exercises.c:133:27: error: cast from pointer to integer of different size [-Werr
 cc1.exe: all warnings being treated as errors
 Compilation failed
 1c7bcff
+Fri, Mar 21, 2025  4:04:52 PM: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:134:27: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+          char comprobar = (char)pop(P1);
+                           ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+aea8bfa
