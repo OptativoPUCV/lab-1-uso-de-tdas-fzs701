@@ -731,3 +731,16 @@ Fri, Mar 21, 2025  3:56:12 PM:
  tests:  3|2
 total_score: 40/70
 5a7c24f
+Fri, Mar 21, 2025  3:56:40 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:125:10: error: unknown type name 'c'
+          c//har* puntero = &bl;
+          ^
+exercises.c:126:18: error: expected ')' before '(' token
+          push(P1,(void*)bl);
+                  ^
+Compilation failed
+9d00ffd

@@ -122,14 +122,14 @@ int parentesisBalanceados(char *cadena) {
       char bl = cadena[i];
 
       if(bl == '(' || bl == '{' || bl == '['){
-         char* puntero = &bl;
-         push(P1,puntero);
+         c//har* puntero = &bl;
+         push(P1,(void*)bl);
 
       } else if (bl == ')' || bl == '}' || bl == ']'){
          if(top(P1) == NULL){
             return 0;
          }
-         //pop(P1);
+         pop(P1);
          //char* comprobar = (char*)pop(P1);
          /*if((bl == ')' && comprobar != '(')  ||
             (bl == '}' && comprobar != '{' ) ||
