@@ -843,3 +843,14 @@ Fri, Mar 21, 2025  4:05:14 PM:
  tests:  8|1
 total_score: 60/70
 90a1950
+Fri, Mar 21, 2025  4:07:41 PM: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:140:23: error: comparison between pointer and integer [-Werror]
+          if(comprobar != '(' ||*comprobar != '{'  || *comprobar != '[' ){
+                       ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8591239
