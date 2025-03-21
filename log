@@ -84,3 +84,22 @@ Fri, Mar 21, 2025 10:31:28 AM:
  tests:  1|4
 total_score: 10/70
 47d631d
+Fri, Mar 21, 2025 10:35:46 AM: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'eliminaElementos':
+exercises.c:81:14: error: comparison between pointer and integer [-Werror]
+    while(num == elem){
+              ^~
+exercises.c:82:7: error: too many arguments to function 'popCurrent'
+       popCurrent(L,num);
+       ^~~~~~~~~~
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:32:7: note: declared here
+ void *popCurrent(List *L);
+       ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+af25acd
