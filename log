@@ -33,3 +33,14 @@ exercises.c:64:15: error: void value not ignored as it ought to be
 cc1.exe: all warnings being treated as errors
 Compilation failed
 f4b7f23
+Fri, Mar 21, 2025 10:29:26 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:64:12: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+       suma += num;
+            ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ab0b693
