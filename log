@@ -446,3 +446,30 @@ exercises.c:129:15: error: unused variable 'comprobar' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2eb6b6a
+Fri, Mar 21, 2025 11:28:12 AM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:121:18: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+       char* bl = cadena[i];
+                  ^~~~~~
+exercises.c:122:13: error: comparison between pointer and integer [-Werror]
+       if(bl == '('){
+             ^~
+exercises.c:125:21: error: comparison between pointer and integer [-Werror]
+       } else if (bl == ')'){
+                     ^~
+exercises.c:129:37: error: 'pila' undeclared (first use in this function)
+          char comprobar = (char)pop(pila)
+                                     ^~~~
+exercises.c:129:37: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:130:10: error: expected ',' or ';' before 'if'
+          if(bl == '(' && comprobar == ')' ){
+          ^~
+exercises.c:129:15: error: unused variable 'comprobar' [-Werror=unused-variable]
+          char comprobar = (char)pop(pila)
+               ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+419950d
