@@ -120,9 +120,17 @@ int parentesisBalanceados(char *cadena) {
    for(int i = 0; cadena[i] != '\0'; i++){
       char bl = cadena[i];
       if(bl == '('){
-         push(P1,(char*)bl);
+         push(P1, (void*)bl);
+      } else if (bl == ')'){
+         if(top(P1) == NULL){
+            return 0;
+         }
+         char comprobar = (char)pop(pila)
+         if(bl == '(' && comprobar == ')' ){
+            return 0;
+         }
       }
    }
-   return 0;
+   return 1;
 }
 
