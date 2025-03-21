@@ -533,3 +533,20 @@ exercises.c:129:15: error: unused variable 'comprobar' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 69cdf5d
+Fri, Mar 21, 2025 11:30:52 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:129:27: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+          char comprobar = (char*)pop(P1)
+                           ^
+exercises.c:130:10: error: expected ',' or ';' before 'if'
+          if(bl == '(' && comprobar == ')' ){
+          ^~
+exercises.c:129:15: error: unused variable 'comprobar' [-Werror=unused-variable]
+          char comprobar = (char*)pop(P1)
+               ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c3bf58e
