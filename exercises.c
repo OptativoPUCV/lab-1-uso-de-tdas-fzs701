@@ -131,10 +131,10 @@ int parentesisBalanceados(char *cadena) {
             return 0;
          }
          //pop(P1);
-         char comprobar = (char)pop(P1);
-         if((bl == ')' && comprobar != '(')  ||
-            (bl == '}' && comprobar != '{' ) ||
-            (bl == ']' && comprobar != '[' )){
+         char *comprobar = (char*)pop(P1);
+         if((bl == ')' && *comprobar != '(')  ||
+            (bl == '}' && *comprobar != '{' ) ||
+            (bl == ']' && *comprobar != '[' )){
             return 0;
          }
       }

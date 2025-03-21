@@ -837,3 +837,9 @@ exercises.c:134:27: error: cast from pointer to integer of different size [-Werr
 cc1.exe: all warnings being treated as errors
 Compilation failed
 aea8bfa
+Fri, Mar 21, 2025  4:05:14 PM: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  8|1
+total_score: 60/70
+90a1950
