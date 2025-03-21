@@ -642,3 +642,23 @@ Fri, Mar 21, 2025 11:44:36 AM:
  tests:  6|2
 total_score: 50/70
 c38c471
+Fri, Mar 21, 2025 11:50:36 AM: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:133:23: error: suggest parentheses around '&&' within '||' [-Werror=parentheses]
+          if(bl == ')' && *comprobar != '('  ||
+             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:135:23: error: suggest parentheses around '&&' within '||' [-Werror=parentheses]
+             bl == ']' && *comprobar != '[' );{
+             ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+exercises.c:133:10: error: this 'if' clause does not guard... [-Werror=misleading-indentation]
+          if(bl == ')' && *comprobar != '('  ||
+          ^~
+exercises.c:135:46: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'if'
+             bl == ']' && *comprobar != '[' );{
+                                              ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6b61e44
